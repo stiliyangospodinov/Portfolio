@@ -10,7 +10,7 @@ export default function Home(){
               hi <span>,</span> i am <br /> stiliyan <br /> gospodinov <span>.</span>{" "}
             </h2>
             <p>junior frontend developer</p>
-            <a href="assets/download/RESUME - STILIYAN GOSPODINOV.pdf" download="">
+            <a href="assets/download/Resume - Stiliyan.pdf" download="">
               download resume
             </a>
           </div>
