@@ -1,73 +1,71 @@
-import { Link } from "react-router-dom"
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header(){
-    return (
-        <>
-  <header className="top-area">
-    <div className="header-area">
-      {/* Start Navigation */}
-      <nav className="navbar navbar-default bootsnav navbar-fixed dark no-background">
-        <div className="container">
-          {/* Start Header Navigation */}
-          <div className="navbar-header">
-            <button
-              type="button"
-              className="navbar-toggle"
-              data-toggle="collapse"
-              data-target="#navbar-menu"
-            >
-              <i className="fa fa-bars" />
-            </button>
-            <Link to="/" className="navbar-brand">
-              stiliyan gospodinov
-            </Link>
-          </div>
-          {/*/.navbar-header*/}
-          {/* End Header Navigation */}
-          {/* Collect the nav links, forms, and other content for toggling */}
-          <div
-            className="collapse navbar-collapse menu-ui-design"
-            id="navbar-menu"
-          >
-            <ul
-              className="nav navbar-nav navbar-right"
-              data-in="fadeInDown"
-              data-out="fadeOutUp"
-            >
-              <li className=" smooth-menu active" />
-              <li className=" smooth-menu">
-                <Link to="/about">about me</Link>
-              </li>
-              <li className=" smooth-menu">
-                <Link to="/education">education</Link>
-              </li>
-              <li className="smooth-menu">
-                <Link to="/skills">skills</Link>
-              </li>
-              <li className="smooth-menu">
-                <Link to="/profiles">profile</Link>
-              </li>
-              <li className="smooth-menu">
-                <Link to="/projects">projects</Link>
-              </li>
-              <li className="smooth-menu">
-                <Link to="/contact">contact</Link>
-              </li>
-            </ul>
-            {/*/.nav */}
-          </div>
-          {/* /.navbar-collapse */}
-        </div>
-        {/*/.container*/}
-      </nav>
-      {/*/nav*/}
-      {/* End Navigation */}
-    </div>
-    {/*/.header-area*/}
-    <div className="clearfix" />
-  </header>
-  {/* /.top-area*/}
-</>
+  useEffect(() => {
+    // Функция за затваряне на менюто
+    const handleMenuClose = () => {
+        $('.navbar-collapse').collapse('hide');
+    };
 
-    )
+    // Затваряне на менюто при клик върху връзка в менюто или върху името
+    $('.navbar-collapse a').on('click', handleMenuClose);
+    $('.navbar-brand').on('click', handleMenuClose);
+
+    // Функция за затваряне на менюто при клик извън него
+    const handleClickOutside = (event) => {
+      const menu = document.getElementById('navbar-menu');
+      if (menu && !menu.contains(event.target)) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    };
+
+    // Добавяне на слушател за клик извън менюто
+    document.addEventListener('click', handleClickOutside);
+
+    // Премахване на слушателите при размонтиране на компонента
+    return () => {
+        $('.navbar-collapse a').off('click', handleMenuClose);
+        $('.navbar-brand').off('click', handleMenuClose);
+        document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <>
+      <header className="top-area">
+        <div className="header-area">
+          {/* Навигация */}
+          <nav className="navbar navbar-default bootsnav navbar-fixed dark no-background">
+            <div className="container">
+              <div className="navbar-header">
+                <button
+                  type="button"
+                  className="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#navbar-menu"
+                >
+                  <i className="fa fa-bars" />
+                </button>
+                <Link to="/" className="navbar-brand">
+                  stiliyan gospodinov
+                </Link>
+              </div>
+              <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                  <li className="smooth-menu active" />
+                  <li className="smooth-menu"><Link to="/about">about me</Link></li>
+                  <li className="smooth-menu"><Link to="/education">education</Link></li>
+                  <li className="smooth-menu"><Link to="/skills">skills</Link></li>
+                  <li className="smooth-menu"><Link to="/profiles">profile</Link></li>
+                  <li className="smooth-menu"><Link to="/projects">projects</Link></li>
+                  <li className="smooth-menu"><Link to="/contact">contact</Link></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </>
+  );
 }
