@@ -9,7 +9,7 @@ export default function Projects() {
     const fetchData = async () => {
       try {
         const projectData = await getAllProjects();
-        setProjects(projectData); // Store projects in state
+        setProjects(projectData);
       } catch (error) {
         console.error("Error fetching projects data:", error);
       }

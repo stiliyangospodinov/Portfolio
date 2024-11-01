@@ -8,7 +8,7 @@ import Skills from "./components/Skills/Skills";
 import Profile from "./components/Profile/Profile";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import SingleProduct from "./components/SingleProduct/SingleProduct";
+import SingleProject from "./components/SingleProject/SingleProject";
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
 <Route path="/skills" element={<Skills />} />
 <Route path="/profiles" element={<Profile />} />
 <Route path="/projects" element={<Projects />} />
-<Route path="/projects/:name" element={<SingleProduct />} />
+<Route path="/projects/:name" element={<SingleProject />} />
 <Route path="/contact" element={<Contact />} />
 </Routes>
 <Footer/>

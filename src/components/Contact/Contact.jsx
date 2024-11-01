@@ -23,9 +23,7 @@ export default function Contact(){
                           name="name"
                         />
                       </div>
-                      {/*/.form-group*/}
                     </div>
-                    {/*/.col*/}
                     <div className="col-sm-6 col-xs-12">
                       <div className="form-group">
                         <input
@@ -36,11 +34,8 @@ export default function Contact(){
                           name="email"
                         />
                       </div>
-                      {/*/.form-group*/}
                     </div>
-                    {/*/.col*/}
                   </div>
-                  {/*/.row*/}
                   <div className="row">
                     <div className="col-sm-12">
                       <div className="form-group">
@@ -52,11 +47,8 @@ export default function Contact(){
                           name="subject"
                         />
                       </div>
-                      {/*/.form-group*/}
                     </div>
-                    {/*/.col*/}
                   </div>
-                  {/*/.row*/}
                   <div className="row">
                     <div className="col-sm-12">
                       <div className="form-group">
@@ -68,11 +60,8 @@ export default function Contact(){
                           defaultValue={""}
                         />
                       </div>
-                      {/*/.form-group*/}
                     </div>
-                    {/*/.col*/}
                   </div>
-                  {/*/.row*/}
                   <div className="row">
                     <div className="col-sm-12">
                       <div className="single-contact-btn">
@@ -80,19 +69,12 @@ export default function Contact(){
                           submit
                         </a>
                       </div>
-                      {/*/.single-single-contact-btn*/}
                     </div>
-                    {/*/.col*/}
                   </div>
-                  {/*/.row*/}
                 </form>
-                {/*/form*/}
               </div>
-              {/*/.contact-form*/}
             </div>
-            {/*/.single-contact-box*/}
           </div>
-          {/*/.col*/}
           <div className="col-md-offset-1 col-md-5 col-sm-6">
             <div className="single-contact-box">
               <div className="contact-adress">
@@ -114,50 +96,36 @@ export default function Contact(){
                     <p>-------</p>
                   </div>
                 </div>
-              </div>
-              {/*/.contact-adress*/}
-              <div className="hm-foot-icon">
+              </div>              <div className="hm-foot-icon">
                 <ul>
                   <li>
                     <a href="https://www.facebook.com/stiliyan.gospodinof">
                       <i className="fab fa-facebook" />
                     </a>
                   </li>
-                  {/*/li*/}
                   <li>
                     <a href="https://www.instagram.com/stiliyan.gospodinov/">
                       <i className="fab fa-instagram" />
                     </a>
                   </li>
-                  {/*/li*/}
                   <li>
                     <a href="https://www.linkedin.com/in/stiliyan-gospodinov-22b8a0332/">
                       <i className="fab fa-linkedin" />
                     </a>
                   </li>
-                  {/*/li*/}
                   <li>
                     <a href="https://github.com/stiliyangospodinov">
                       <i className="fab fa-github" />
                     </a>
                   </li>
-                  {/*/li*/}
                 </ul>
-                {/*/ul*/}
               </div>
-              {/*/.hm-foot-icon*/}
             </div>
-            {/*/.single-contact-box*/}
           </div>
-          {/*/.col*/}
         </div>
-        {/*/.row*/}
       </div>
-      {/*/.contact-content*/}
     </div>
-    {/*/.container*/}
   </section>
-  {/*/.contact*/}
 </>
 
     )

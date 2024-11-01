@@ -3,16 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Header(){
   useEffect(() => {
-    // Функция за затваряне на менюто
+ 
     const handleMenuClose = () => {
         $('.navbar-collapse').collapse('hide');
     };
 
-    // Затваряне на менюто при клик върху връзка в менюто или върху името
     $('.navbar-collapse a').on('click', handleMenuClose);
     $('.navbar-brand').on('click', handleMenuClose);
 
-    // Функция за затваряне на менюто при клик извън него
     const handleClickOutside = (event) => {
       const menu = document.getElementById('navbar-menu');
       if (menu && !menu.contains(event.target)) {
@@ -20,10 +18,8 @@ export default function Header(){
       }
     };
 
-    // Добавяне на слушател за клик извън менюто
     document.addEventListener('click', handleClickOutside);
 
-    // Премахване на слушателите при размонтиране на компонента
     return () => {
         $('.navbar-collapse a').off('click', handleMenuClose);
         $('.navbar-brand').off('click', handleMenuClose);
@@ -35,7 +31,6 @@ export default function Header(){
     <>
       <header className="top-area">
         <div className="header-area">
-          {/* Навигация */}
           <nav className="navbar navbar-default bootsnav navbar-fixed dark no-background">
             <div className="container">
               <div className="navbar-header">

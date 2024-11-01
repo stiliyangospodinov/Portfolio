@@ -53,36 +53,30 @@ I’m eager to grow in a dynamic environment where I can apply my skills and con
                       <i className="fab fa-facebook" aria-hidden="true" />
                     </a>
                   </li>
-                  {/* / li */}
                   <li>
                     <a href="https://www.instagram.com/stiliyan.gospodinov/">
                       <i className="fab fa-instagram" aria-hidden="true" />
                     </a>
                   </li>
-                  {/* / li */}
                   <li>
                     <a href="https://www.linkedin.com/in/stiliyan-gospodinov-22b8a0332/">
                       <i className="fab fa-linkedin" aria-hidden="true" />
                     </a>
                   </li>
-                  {/* / li */}
                   <li>
                     <a href="https://github.com/stiliyangospodinov">
                       <i className="fab fa-github" aria-hidden="true" />
                     </a>
                   </li>
-                  {/* / li */}
                 </ul>
-                {/* / ul */}
               </div>
-              {/* /.about-list-icon */}
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/*/.about*/}
+
 </>
 
     )

@@ -52,14 +52,14 @@ export default function Profile(){
               <div className="single-profile">
                 <div className="profile-txt">
                   <a href="">
-                    <i className="flaticon-github-logo" />
+                    <i className="fab fa-github" />
                   </a>
                   <div className="profile-icon-name">Github</div>
                 </div>
                 <div className="single-profile-overlay">
                   <div className="profile-txt">
                     <a href="https://github.com/stiliyangospodinov">
-                      <i className="flaticon-github-logo" />
+                      <i className="fab fa-github" />
                     </a>
                     <div className="profile-icon-name">Github</div>
                   </div>

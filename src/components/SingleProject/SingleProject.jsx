@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProjectByName } from "../../services/dataService";
 
-export default function SingleProduct() {
+export default function SingleProject() {
   const { name } = useParams();
   const [project, setProject] = useState(null);
 
@@ -40,7 +40,7 @@ export default function SingleProduct() {
                {project.description}
                 </p>
                 <div className="row" style={{ justifyContent: 'space-between', display: 'flex' }}>
-                  <div className="col-sm-4">
+                  <div className="col-sm-4" >
                     <div className="single-about-add-info">
                       <h3>name</h3>
                       <p>{project.name}</p>
@@ -74,7 +74,6 @@ export default function SingleProduct() {
         </div>
       </div>
     </section>
-    {/*/.about*/}
   </>
   
   );

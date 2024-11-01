@@ -27,4 +27,4 @@ export const getSoftSkills = () => getDocumentData("Skills", "Soft skills");
 
 export const getAllProjects = () => getCollectionData("Projects");
 
-export const getProjectByName = (id) => getDocumentByName("Projects", id);
+export const getProjectByName = (name) => getDocumentByName("Projects", name);

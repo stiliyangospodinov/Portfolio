@@ -16,7 +16,6 @@ export default function Education(){
                 Frontend  <span> </span> Development
                 </h3>
               </div>
-              {/*/.experience-time*/}
               <div className="timeline-horizontal-border">
                 <i className="fa fa-circle" aria-hidden="true" />
                 <span className="single-timeline-horizontal" />
@@ -29,9 +28,7 @@ export default function Education(){
                   Completed multiple courses in web development, mastering key technologies like ReactJS, Angular, and MySQL, with consistent high grades, including a perfect 6.00 in several subjects. Developed a solid foundation in both frontend and backend programming, preparing for professional roles in software development.
                   </p>
                 </div>
-                {/*/.timeline-content*/}
               </div>
-              {/*/.timeline*/}
             </div>
           </div>
           <div className="col-sm-4">
@@ -42,7 +39,6 @@ export default function Education(){
                   Master <span>of </span> Corporate management
                 </h3>
               </div>
-              {/*/.experience-time*/}
               <div className="timeline-horizontal-border">
                 <i className="fa fa-circle" aria-hidden="true" />
                 <span className="single-timeline-horizontal" />
@@ -57,9 +53,7 @@ Conducted research on corporate sustainability, focusing on ethical practices an
 Collaborated with peers on a thesis examining innovative management strategies in tech industries.
                   </p>
                 </div>
-                {/*/.timeline-content*/}
               </div>
-              {/*/.timeline*/}
             </div>
           </div>
           <div className="col-sm-4">
@@ -70,7 +64,6 @@ Collaborated with peers on a thesis examining innovative management strategies i
                   bachelor <span>of </span> industrial management
                 </h3>
               </div>
-              {/*/.experience-time*/}
               <div className="timeline-horizontal-border">
                 <i className="fa fa-circle" aria-hidden="true" />
                 <span
@@ -88,16 +81,13 @@ Engaged in practical projects that improved operational efficiency and productiv
 Involved in student organizations that promoted teamwork and leadership skills among peers.
                   </p>
                 </div>
-                {/*/.timeline-content*/}
               </div>
-              {/*/.timeline*/}
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/*/.education*/}
 </>
 
     )

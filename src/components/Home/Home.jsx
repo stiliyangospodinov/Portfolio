@@ -14,15 +14,10 @@ export default function Home(){
               download resume
             </a>
           </div>
-          {/*/.header-text*/}
         </div>
-        {/*/.col*/}
       </div>
-      {/* /.row*/}
     </div>
-    {/* /.container*/}
   </section>
-  {/*/.welcome-hero*/}
 </>
 
     )
