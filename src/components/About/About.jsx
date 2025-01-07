@@ -28,7 +28,7 @@ I’m eager to grow in a dynamic environment where I can apply my skills and con
                 <div className="col-sm-4">
                   <div className="single-about-add-info">
                     <h3>email</h3>
-                    <p>stelko095@gmail.com</p>
+                    <p>stiliyan.gospodinov95@gmail.com</p>
                   </div>
                 </div>
                 <div className="col-sm-4">

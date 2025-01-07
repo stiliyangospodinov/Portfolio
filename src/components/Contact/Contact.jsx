@@ -89,7 +89,7 @@ export default function Contact(){
                   </div>
                   <div className="single-contact-add-info">
                     <h3>email</h3>
-                    <p>stelko095@gmail.com</p>
+                    <p>stiliyan.gospodinov95@gmail.com</p>
                   </div>
                   <div className="single-contact-add-info">
                     <h3>website</h3>
