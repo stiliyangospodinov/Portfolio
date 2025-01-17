@@ -14,7 +14,7 @@ export default function About(){
               I’m a junior frontend developer with a solid foundation in web development, gained through intensive studies at SoftUni.
               </h3>
               <p>
-              My passion for building user-friendly and efficient applications has driven me to develop projects using React and Angular, integrating them with databases like MongoDB, Firebase, and MySQL.
+              My passion for building user-friendly and efficient applications has driven me to develop projects using React and Angular, integrating them with databases like MongoDB, Firebase, and RESTful API.
 
 I’m eager to grow in a dynamic environment where I can apply my skills and continue learning. Working on challenging projects that combine creativity and technical expertise is my goal, and I look forward to contributing to a dedicated team.
               </p>
