@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getProjectByName } from "../../services/dataService";
 
 export default function SingleProject() {
@@ -56,6 +56,7 @@ export default function SingleProject() {
               </div>
             </div>
             <div className="col-sm-offset-1 col-sm-5">
+                <Link to={`${project.link}`}>
               <div className="single-about-img">
                 <img
                   src={`/${project.imageUrl}`}
@@ -69,6 +70,7 @@ export default function SingleProject() {
                   }}
                 />
               </div>
+                </Link>
             </div>
           </div>
         </div>
